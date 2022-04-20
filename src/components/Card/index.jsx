@@ -15,7 +15,7 @@ const Card = ({repo}) =>{
                     </ul>
                     </>
                     ):(<></>)}
-                    <a href={repo.clone_url}>Link do Repositorio</a>                  
+                    <a href={repo.clone_url}>Repository</a>                  
             
         </StyledCard>
     )

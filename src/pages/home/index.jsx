@@ -37,7 +37,7 @@ const Home= ()=>{
     return (
       <>
       <Container isFailure={!!fail}>
-        <Form register={register} errors={errors} fail={fail} name="search" innerText="Pesquisar" onSubmit={handleSubmit(onSubmit)}/>
+        <Form register={register} errors={errors} fail={fail} name="search" innerText="Search" onSubmit={handleSubmit(onSubmit)}/>
         <ul>
            {projects.map((project)=><Card repo={project}/>)}
         </ul>

@@ -9,7 +9,7 @@ const Form = ({ register, name , innerText , errors , fail , ...rest }) =>{
     <StyledForm {...rest}>
         <label>Owner<span> {errors.owner?.message}</span> </label>
         <Input icon={FiUser} register={register} name="owner" isError={!!errors.owner} />
-        <label>Projeto<span> {errors.project?.message}</span> </label>
+        <label>Project<span> {errors.project?.message}</span> </label>
         <Input 
         icon={BiGitRepoForked} 
         register={register} name="project" isError={!!errors.project} />
