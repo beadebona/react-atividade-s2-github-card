@@ -13,8 +13,8 @@ const Home= ()=>{
   const [ fail, setFail] = useState("")
 
   const schema = yup.object().shape({
-    owner: yup.string().required("Campo obrigatório"),
-    project: yup.string().required("Campo obrigatório")
+    owner: yup.string().required("Required"),
+    project: yup.string().required("Required")
   })
 
   const { register, handleSubmit, formState:{errors} } = useForm({
@@ -29,7 +29,7 @@ const Home= ()=>{
     })
     .catch((error)=>{
       console.log(error)
-      setFail("ERRO - Repositório não encontrado!")
+      setFail("ERRO - not found!")
     })
   }
 
